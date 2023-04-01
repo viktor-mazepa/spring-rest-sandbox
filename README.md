@@ -2,13 +2,13 @@
 Lessons Project. Sandbox repository for code which I wrote during Spring Course study (https://www.udemy.com/course/spring-alishev/).
 A simple application that allows to add records into the database (table person), and get a list of records via REST requests.
 It contains three endpoints for GET requests:
- - /api/sayHello - returns hello string
- - /people - returns list of records from table Person
- - /people/{id} - returns one record from table Person with the corresponding id
+ - ```/api/sayHello``` - returns hello string
+ - ```/people``` - returns list of records from table Person
+ - ```/people/{id}``` - returns one record from table Person with the corresponding id
  
 Also, application contains one endpoint for the POST request:
-- /people - provides the possibility to create a new record in the table Person
-Example of response for GET requests to /people endpoint:
+- ```/people``` - provides the possibility to create a new record in the table Person
+Example of response for GET requests to ```/people``` endpoint:
 ```
   [
     {
@@ -23,7 +23,7 @@ Example of response for GET requests to /people endpoint:
     }
 ]
 ```
-Example of response for GET requests to /people/{id} endpoint:
+Example of response for GET requests to ```/people/{id}``` endpoint:
 ```
 {
     "name": "Viktor Mazepa",
@@ -31,14 +31,14 @@ Example of response for GET requests to /people/{id} endpoint:
     "email": "test@gmail.com"
 }
 ```
-Example of negative response for GET requests to /people/{id} endpoint:
+Example of negative response from ```/people/{id}``` endpoint:
 ```
 {
     "message": "Person with id was not found!",
     "timestamp": "2023-04-01T16:59:40.169+00:00"
 }
 ```
-Example of POST request body to endpoint /people:
+Example of POST request body to endpoint ```/people```:
 ```
 {
     "name":"Tester Testerovic",
