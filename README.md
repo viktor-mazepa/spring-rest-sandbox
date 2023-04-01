@@ -8,6 +8,7 @@ It contains three endpoints for GET requests:
  
 Also, application contains one endpoint for the POST request:
 - ```/people``` - provides the possibility to create a new record in the table Person
+
 Example of response for GET requests to ```/people``` endpoint:
 ```
   [
